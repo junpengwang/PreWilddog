@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param value 一个包含新 value 的 WMutableData 实例
  * @return 返回一个 WTransactionResult 实例，它可以作为给 runTransactionBlock: 方法中 block 的一个返回值
  */
-+ (WTransactionResult *) successWithValue:(WMutableData *)value;
++ (WTransactionResult *)successWithValue:(WMutableData *)value;
 
 
 /**
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return 返回一个 WTransactionResult 实例，它可以作为给 runTransactionBlock: 方法中 block 的一个返回值
  */
-+ (WTransactionResult *) abort;
++ (WTransactionResult *)abort;
 @end
 
 NS_ASSUME_NONNULL_END

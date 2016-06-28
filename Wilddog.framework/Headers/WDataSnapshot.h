@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 指定节点位置的WDataSnapshot
  */
-- (WDataSnapshot *) childSnapshotForPath:(NSString *)childPathString;
+- (WDataSnapshot *)childSnapshotForPath:(NSString *)childPathString;
 
 
 /**
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 如果指定路径下存在子节点，返回YES，否则返回NO
  */
-- (BOOL) hasChild:(NSString *)childPathString;
+- (BOOL)hasChild:(NSString *)childPathString;
 
 
 /**
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 如果这个 WDatasnapshot 有任何子节点返回YES
  */
-- (BOOL) hasChildren;
+- (BOOL)hasChildren;
 
 
 /**

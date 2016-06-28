@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return YES 为存在子节点，NO 为不存在
  */
-- (BOOL) hasChildren;
+- (BOOL)hasChildren;
 
 
 /**
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param path 可以是类似'child'的单层级路径，也可以是类似'a/deeper/child'多层级路径
  * @return 如果在指定的相对路径下，该 WMutableData 包含子节点，则返回YES
  */
-- (BOOL) hasChildAtPath:(NSString *)path;
+- (BOOL)hasChildAtPath:(NSString *)path;
 
 
 /**
@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param path 可以是类似'child'的单层级路径，也可以是类似'a/deeper/child'多层级路径
  * @return 指定路径下的 WMutableData 实例
  */
-- (WMutableData *) childDataByAppendingPath:(NSString *)path;
+- (WMutableData *)childDataByAppendingPath:(NSString *)path;
 
 
 /** @name 属性 */
