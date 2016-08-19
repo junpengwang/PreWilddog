@@ -105,7 +105,7 @@ NS_ASSUME_NONNULL_BEGIN
  *     ...
  * }
  */
-@property (strong, readonly, nonatomic) NSEnumerator* children;
+@property (strong, readonly, nonatomic) NSEnumerator <WDataSnapshot *>* children;
 
 
 /**

@@ -500,7 +500,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  返回当前用户的认证信息
  */
-@property (nonatomic, strong, readonly) WAuthData *authData;
+@property (nonatomic, strong, readonly, nullable) WAuthData *authData;
 
 
 /**

@@ -232,7 +232,7 @@ typedef int64_t WilddogHandle;
  * queryStartingAtValue:childKey: 用于返回一个WQuery引用，这个引用用来监测数据的变化，这些被监测的数据的值大于startValue，或者等于startValue并且key大于等于childKey。
  *
  * @param startValue query查询到的值均大于等于startValue
- * @param childKey query查询到的key均大于等于childKey
+ * @param childKey  当 query 查询到的值和 startValue 相等时，则比较 key 的大小。
  * @return 返回一个WQuery查询器类，用于响应在数据值大于startValue，或等于startValue的值并且key大于或等于childKey的节点事件
  */
 - (WQuery *)queryStartingAtValue:(nullable id)startValue childKey:(nullable NSString *)childKey;
@@ -251,7 +251,7 @@ typedef int64_t WilddogHandle;
  * queryEndingAtValue:childKey: 用于返回一个WQuery引用，这个引用用来监测数据的变化，这些被监测的数据的值小于endValue，或者等于endValue并且key小于等于childKey。
  *
  * @param endValue query查询到的值均小于等于endValue
- * @param childKey query查询到的key均小于等于childKey
+ * @param childKey 当 query 查询到的值和 endValue 相等时，则比较它们 key 的大小。
  * @return 返回一个WQuery查询器类，用于响应在查询到的数据值小于endValue，或者数据值等于endValue并且key小于等于childKey的节点事件
  */
 - (WQuery *)queryEndingAtValue:(nullable id)endValue childKey:(nullable NSString *)childKey;
